@@ -1,0 +1,40 @@
+/**
+ * @fileoverview added by tsickle
+ * Generated from: public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/*
+ * Public API Surface of ngx-appkit-starter-alpha
+ */
+export { Notification } from './lib/models/notification.model';
+export { Role } from './lib/models/role.model';
+export { UserEdit } from './lib/models/user-edit.model';
+export { Gender } from './lib/models/enums';
+export { UserLogin } from './lib/models/user-login.model';
+export { flyInOut, fadeInOut } from './lib/services/animations';
+export { ConfigurationServiceProvider } from './lib/services/configuration.service-provider';
+export { ThemeManagerProvider } from './lib/services/theme-manager.provider';
+export { AccountService } from './lib/services/account.service';
+export { NotificationService } from './lib/services/notification.service';
+export { TranslationServiceProvider } from './lib/services/translation.service-provider';
+export { AppTitleService } from './lib/services/app-title.service';
+export { AccountEndpoint } from './lib/services/account-endpoint.service';
+export { AlertServiceProvider } from './lib/services/alert.service-provider';
+export { NotificationEndpoint } from './lib/services/notification-endpoint.service';
+export { LocalStoreManagerProvider } from './lib/services/local-storage-manager.service-provider';
+export { GroupByPipe } from './lib/pipes/group-by.pipe';
+export { NotificationsViewerComponent } from './lib/components/notifications-viewer/notifications-viewer.component';
+export { UsersManagementComponent } from './lib/components/users-management/users-management.component';
+export { UserPreferencesComponent } from './lib/components/user-preferences/user-preferences.component';
+export { RolesManagementComponent } from './lib/components/roles-management/roles-management.component';
+export { RoleEditorComponent } from './lib/components/role-editor/role-editor.component';
+export { UserInfoComponent } from './lib/components/user-info/user-info.component';
+export { TodoDemoComponent } from './lib/components/todo-demo/todo-demo.component';
+export { SearchBoxComponent } from './lib/components/search-box/search-box.component';
+export { StatisticsDemoComponent } from './lib/components/statistics-demo/statistics-demo.component';
+export { SettingsComponent } from './lib/pages/settings/settings.component';
+export { NotFoundComponent } from './lib/pages/not-found/not-found.component';
+export { LoginComponent } from './lib/pages/login/login.component';
+export { NgxAppkitStarterAlphaModule } from './lib/ngx-appkit-starter-alpha.module';
+export { DependencyModule } from './lib/dependency.module';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiJuZzovL0Bwb2xwd2FyZS9uZ3gtYXBwa2l0LXN0YXJ0ZXItYWxwaGEvIiwic291cmNlcyI6WyJwdWJsaWMtYXBpLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7O0FBSUEsNkJBQWMsaUNBQWlDLENBQUM7QUFDaEQscUJBQWMseUJBQXlCLENBQUM7QUFDeEMseUJBQWMsOEJBQThCLENBQUM7QUFDN0MsdUJBQWMsb0JBQW9CLENBQUM7QUFDbkMsMEJBQWMsK0JBQStCLENBQUM7QUFFOUMsb0NBQWMsMkJBQTJCLENBQUM7QUFDMUMsNkNBQWMsK0NBQStDLENBQUM7QUFDOUQscUNBQWMsdUNBQXVDLENBQUM7QUFDdEQsK0JBQWMsZ0NBQWdDLENBQUM7QUFDL0Msb0NBQWMscUNBQXFDLENBQUM7QUFDcEQsMkNBQWMsNkNBQTZDLENBQUM7QUFDNUQsZ0NBQWMsa0NBQWtDLENBQUM7QUFDakQsZ0NBQWMseUNBQXlDLENBQUM7QUFDeEQscUNBQWMsdUNBQXVDLENBQUM7QUFDdEQscUNBQWMsOENBQThDLENBQUM7QUFDN0QsMENBQWMsdURBQXVELENBQUM7QUFFdEUsNEJBQWMsMkJBQTJCLENBQUM7QUFFMUMsNkNBQWMsc0VBQXNFLENBQUM7QUFDckYseUNBQWMsOERBQThELENBQUM7QUFDN0UseUNBQWMsOERBQThELENBQUM7QUFDN0UseUNBQWMsOERBQThELENBQUM7QUFDN0Usb0NBQWMsb0RBQW9ELENBQUM7QUFDbkUsa0NBQWMsZ0RBQWdELENBQUM7QUFDL0Qsa0NBQWMsZ0RBQWdELENBQUM7QUFDL0QsbUNBQWMsa0RBQWtELENBQUM7QUFDakUsd0NBQWMsNERBQTRELENBQUM7QUFFM0Usa0NBQWMseUNBQXlDLENBQUM7QUFDeEQsa0NBQWMsMkNBQTJDLENBQUM7QUFDMUQsK0JBQWMsbUNBQW1DLENBQUM7QUFFbEQsNENBQWMsdUNBQXVDLENBQUM7QUFDdEQsaUNBQWMseUJBQXlCLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyIvKlxuICogUHVibGljIEFQSSBTdXJmYWNlIG9mIG5neC1hcHBraXQtc3RhcnRlci1hbHBoYVxuICovXG5cbmV4cG9ydCAqIGZyb20gJy4vbGliL21vZGVscy9ub3RpZmljYXRpb24ubW9kZWwnO1xuZXhwb3J0ICogZnJvbSAnLi9saWIvbW9kZWxzL3JvbGUubW9kZWwnO1xuZXhwb3J0ICogZnJvbSAnLi9saWIvbW9kZWxzL3VzZXItZWRpdC5tb2RlbCc7XG5leHBvcnQgKiBmcm9tICcuL2xpYi9tb2RlbHMvZW51bXMnO1xuZXhwb3J0ICogZnJvbSAnLi9saWIvbW9kZWxzL3VzZXItbG9naW4ubW9kZWwnO1xuXG5leHBvcnQgKiBmcm9tICcuL2xpYi9zZXJ2aWNlcy9hbmltYXRpb25zJztcbmV4cG9ydCAqIGZyb20gJy4vbGliL3NlcnZpY2VzL2NvbmZpZ3VyYXRpb24uc2VydmljZS1wcm92aWRlcic7XG5leHBvcnQgKiBmcm9tICcuL2xpYi9zZXJ2aWNlcy90aGVtZS1tYW5hZ2VyLnByb3ZpZGVyJztcbmV4cG9ydCAqIGZyb20gJy4vbGliL3NlcnZpY2VzL2FjY291bnQuc2VydmljZSc7XG5leHBvcnQgKiBmcm9tICcuL2xpYi9zZXJ2aWNlcy9ub3RpZmljYXRpb24uc2VydmljZSc7XG5leHBvcnQgKiBmcm9tICcuL2xpYi9zZXJ2aWNlcy90cmFuc2xhdGlvbi5zZXJ2aWNlLXByb3ZpZGVyJztcbmV4cG9ydCAqIGZyb20gJy4vbGliL3NlcnZpY2VzL2FwcC10aXRsZS5zZXJ2aWNlJztcbmV4cG9ydCAqIGZyb20gJy4vbGliL3NlcnZpY2VzL2FjY291bnQtZW5kcG9pbnQuc2VydmljZSc7XG5leHBvcnQgKiBmcm9tICcuL2xpYi9zZXJ2aWNlcy9hbGVydC5zZXJ2aWNlLXByb3ZpZGVyJztcbmV4cG9ydCAqIGZyb20gJy4vbGliL3NlcnZpY2VzL25vdGlmaWNhdGlvbi1lbmRwb2ludC5zZXJ2aWNlJztcbmV4cG9ydCAqIGZyb20gJy4vbGliL3NlcnZpY2VzL2xvY2FsLXN0b3JhZ2UtbWFuYWdlci5zZXJ2aWNlLXByb3ZpZGVyJztcblxuZXhwb3J0ICogZnJvbSAnLi9saWIvcGlwZXMvZ3JvdXAtYnkucGlwZSc7XG5cbmV4cG9ydCAqIGZyb20gJy4vbGliL2NvbXBvbmVudHMvbm90aWZpY2F0aW9ucy12aWV3ZXIvbm90aWZpY2F0aW9ucy12aWV3ZXIuY29tcG9uZW50JztcbmV4cG9ydCAqIGZyb20gJy4vbGliL2NvbXBvbmVudHMvdXNlcnMtbWFuYWdlbWVudC91c2Vycy1tYW5hZ2VtZW50LmNvbXBvbmVudCc7XG5leHBvcnQgKiBmcm9tICcuL2xpYi9jb21wb25lbnRzL3VzZXItcHJlZmVyZW5jZXMvdXNlci1wcmVmZXJlbmNlcy5jb21wb25lbnQnO1xuZXhwb3J0ICogZnJvbSAnLi9saWIvY29tcG9uZW50cy9yb2xlcy1tYW5hZ2VtZW50L3JvbGVzLW1hbmFnZW1lbnQuY29tcG9uZW50JztcbmV4cG9ydCAqIGZyb20gJy4vbGliL2NvbXBvbmVudHMvcm9sZS1lZGl0b3Ivcm9sZS1lZGl0b3IuY29tcG9uZW50JztcbmV4cG9ydCAqIGZyb20gJy4vbGliL2NvbXBvbmVudHMvdXNlci1pbmZvL3VzZXItaW5mby5jb21wb25lbnQnO1xuZXhwb3J0ICogZnJvbSAnLi9saWIvY29tcG9uZW50cy90b2RvLWRlbW8vdG9kby1kZW1vLmNvbXBvbmVudCc7XG5leHBvcnQgKiBmcm9tICcuL2xpYi9jb21wb25lbnRzL3NlYXJjaC1ib3gvc2VhcmNoLWJveC5jb21wb25lbnQnO1xuZXhwb3J0ICogZnJvbSAnLi9saWIvY29tcG9uZW50cy9zdGF0aXN0aWNzLWRlbW8vc3RhdGlzdGljcy1kZW1vLmNvbXBvbmVudCc7XG5cbmV4cG9ydCAqIGZyb20gJy4vbGliL3BhZ2VzL3NldHRpbmdzL3NldHRpbmdzLmNvbXBvbmVudCc7XG5leHBvcnQgKiBmcm9tICcuL2xpYi9wYWdlcy9ub3QtZm91bmQvbm90LWZvdW5kLmNvbXBvbmVudCc7XG5leHBvcnQgKiBmcm9tICcuL2xpYi9wYWdlcy9sb2dpbi9sb2dpbi5jb21wb25lbnQnO1xuXG5leHBvcnQgKiBmcm9tICcuL2xpYi9uZ3gtYXBwa2l0LXN0YXJ0ZXItYWxwaGEubW9kdWxlJztcbmV4cG9ydCAqIGZyb20gJy4vbGliL2RlcGVuZGVuY3kubW9kdWxlJztcbiJdfQ==

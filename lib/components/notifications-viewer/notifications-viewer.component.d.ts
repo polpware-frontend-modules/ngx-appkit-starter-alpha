@@ -1,0 +1,34 @@
+import { OnInit, OnDestroy, TemplateRef } from '@angular/core';
+import { AlertService, AppTranslationService } from '@polpware/ngx-appkit-services-alpha';
+import { NotificationService } from '../../services/notification.service';
+import { AccountService } from '../../services/account.service';
+import { Notification } from '../../models/notification.model';
+export declare class NotificationsViewerComponent implements OnInit, OnDestroy {
+    private alertService;
+    private translationService;
+    private accountService;
+    private notificationService;
+    columns: any[];
+    rows: Notification[];
+    loadingIndicator: boolean;
+    dataLoadingConsecutiveFailurs: number;
+    dataLoadingSubscription: any;
+    isViewOnly: boolean;
+    verticalScrollbar: boolean;
+    statusHeaderTemplate: TemplateRef<any>;
+    statusTemplate: TemplateRef<any>;
+    dateTemplate: TemplateRef<any>;
+    contentHeaderTemplate: TemplateRef<any>;
+    contenBodytTemplate: TemplateRef<any>;
+    actionsTemplate: TemplateRef<any>;
+    constructor(alertService: AlertService, translationService: AppTranslationService, accountService: AccountService, notificationService: NotificationService);
+    ngOnInit(): void;
+    ngOnDestroy(): void;
+    initDataLoading(): void;
+    private processResults;
+    getPrintedDate(value: Date): string;
+    deleteNotification(row: Notification): void;
+    deleteNotificationHelper(row: Notification): void;
+    togglePin(row: Notification): void;
+    readonly canManageNotifications: boolean;
+}
