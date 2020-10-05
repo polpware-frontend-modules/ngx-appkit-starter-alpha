@@ -3,6 +3,7 @@ import { AuthService, User, Permission, PermissionValues } from '@polpware/ngx-o
 import { AccountEndpoint } from './account-endpoint.service';
 import { Role } from '../models/role.model';
 import { UserEdit } from '../models/user-edit.model';
+import * as i0 from "@angular/core";
 export declare type RolesChangedOperation = 'add' | 'delete' | 'modify';
 export interface RolesChangedEventArg {
     roles: Role[] | string[];
@@ -37,6 +38,8 @@ export declare class AccountService {
     private onRolesChanged;
     onRolesUserCountChanged(roles: Role[] | string[]): void;
     getRolesChangedEvent(): Observable<RolesChangedEventArg>;
-    readonly permissions: PermissionValues[];
-    readonly currentUser: User;
+    get permissions(): PermissionValues[];
+    get currentUser(): User;
+    static ɵfac: i0.ɵɵFactoryDef<AccountService, never>;
+    static ɵprov: i0.ɵɵInjectableDef<AccountService>;
 }

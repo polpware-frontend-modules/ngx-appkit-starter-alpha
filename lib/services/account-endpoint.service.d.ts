@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { AuthService, EndpointBase } from '@polpware/ngx-oauth2';
 import { ConfigurationService } from '@polpware/ngx-appkit-services-alpha';
+import * as i0 from "@angular/core";
 export declare class AccountEndpoint extends EndpointBase {
     private configurations;
     private readonly _usersUrl;
@@ -12,14 +13,14 @@ export declare class AccountEndpoint extends EndpointBase {
     private readonly _rolesUrl;
     private readonly _roleByRoleNameUrl;
     private readonly _permissionsUrl;
-    readonly usersUrl: string;
-    readonly userByUserNameUrl: string;
-    readonly currentUserUrl: string;
-    readonly currentUserPreferencesUrl: string;
-    readonly unblockUserUrl: string;
-    readonly rolesUrl: string;
-    readonly roleByRoleNameUrl: string;
-    readonly permissionsUrl: string;
+    get usersUrl(): string;
+    get userByUserNameUrl(): string;
+    get currentUserUrl(): string;
+    get currentUserPreferencesUrl(): string;
+    get unblockUserUrl(): string;
+    get rolesUrl(): string;
+    get roleByRoleNameUrl(): string;
+    get permissionsUrl(): string;
     constructor(configurations: ConfigurationService, http: HttpClient, authService: AuthService);
     getUserEndpoint<T>(userId?: string): Observable<T>;
     getUserByUserNameEndpoint<T>(userName: string): Observable<T>;
@@ -39,4 +40,6 @@ export declare class AccountEndpoint extends EndpointBase {
     getUpdateRoleEndpoint<T>(roleObject: any, roleId: string): Observable<T>;
     getDeleteRoleEndpoint<T>(roleId: string): Observable<T>;
     getPermissionsEndpoint<T>(): Observable<T>;
+    static ɵfac: i0.ɵɵFactoryDef<AccountEndpoint, never>;
+    static ɵprov: i0.ɵɵInjectableDef<AccountEndpoint>;
 }

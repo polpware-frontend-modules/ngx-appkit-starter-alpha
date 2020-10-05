@@ -1,4 +1,5 @@
 import { Observable } from 'rxjs';
+import * as i0 from "@angular/core";
 export declare class NotificationEndpoint {
     private demoNotifications;
     getNotificationEndpoint<T>(notificationId: number): Observable<T>;
@@ -9,4 +10,6 @@ export declare class NotificationEndpoint {
     getReadUnreadNotificationEndpoint<T>(notificationIds: number[], isRead: boolean): Observable<T>;
     getDeleteNotificationEndpoint<T>(notificationId: number): Observable<T>;
     private createResponse;
+    static ɵfac: i0.ɵɵFactoryDef<NotificationEndpoint, never>;
+    static ɵprov: i0.ɵɵInjectableDef<NotificationEndpoint>;
 }

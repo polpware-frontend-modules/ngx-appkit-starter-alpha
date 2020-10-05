@@ -2,6 +2,7 @@ import { OnInit, OnDestroy } from '@angular/core';
 import { AlertService, AppTranslationService, ConfigurationService, ThemeManager } from '@polpware/ngx-appkit-services-alpha';
 import { BootstrapSelectDirective } from '../../directives/bootstrap-select.directive';
 import { AccountService } from '../../services/account.service';
+import * as i0 from "@angular/core";
 export declare class UserPreferencesComponent implements OnInit, OnDestroy {
     private alertService;
     private translationService;
@@ -20,7 +21,9 @@ export declare class UserPreferencesComponent implements OnInit, OnDestroy {
     setAsDefaultHelper(): void;
     resetDefault(): void;
     resetDefaultHelper(): void;
-    readonly canViewCustomers: boolean;
-    readonly canViewProducts: boolean;
-    readonly canViewOrders: boolean;
+    get canViewCustomers(): boolean;
+    get canViewProducts(): boolean;
+    get canViewOrders(): boolean;
+    static ɵfac: i0.ɵɵFactoryDef<UserPreferencesComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<UserPreferencesComponent, "user-preferences", never, {}, {}, never, never>;
 }

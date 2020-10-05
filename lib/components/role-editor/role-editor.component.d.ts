@@ -2,6 +2,7 @@ import { AlertService } from '@polpware/ngx-appkit-services-alpha';
 import { Permission } from '@polpware/ngx-oauth2';
 import { AccountService } from '../../services/account.service';
 import { Role } from '../../models/role.model';
+import * as i0 from "@angular/core";
 export declare class RoleEditorComponent {
     private alertService;
     private accountService;
@@ -33,5 +34,7 @@ export declare class RoleEditorComponent {
     resetForm(replace?: boolean): void;
     newRole(allPermissions: Permission[]): Role;
     editRole(role: Role, allPermissions: Permission[]): Role;
-    readonly canManageRoles: boolean;
+    get canManageRoles(): boolean;
+    static ɵfac: i0.ɵɵFactoryDef<RoleEditorComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<RoleEditorComponent, "role-editor", never, {}, {}, never, never>;
 }

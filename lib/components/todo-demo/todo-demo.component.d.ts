@@ -2,6 +2,7 @@ import { OnInit, OnDestroy, TemplateRef } from '@angular/core';
 import { ModalDirective } from 'ngx-bootstrap/modal';
 import { AlertService, AppTranslationService, LocalStoreManager } from '@polpware/ngx-appkit-services-alpha';
 import { AuthService } from '@polpware/ngx-oauth2';
+import * as i0 from "@angular/core";
 export declare class TodoDemoComponent implements OnInit, OnDestroy {
     private alertService;
     private translationService;
@@ -18,8 +19,9 @@ export declare class TodoDemoComponent implements OnInit, OnDestroy {
     formResetToggle: boolean;
     _currentUserId: string;
     _hideCompletedTasks: boolean;
-    readonly currentUserId: string;
-    hideCompletedTasks: boolean;
+    get currentUserId(): string;
+    set hideCompletedTasks(value: boolean);
+    get hideCompletedTasks(): boolean;
     verticalScrollbar: boolean;
     statusHeaderTemplate: TemplateRef<any>;
     statusTemplate: TemplateRef<any>;
@@ -41,4 +43,6 @@ export declare class TodoDemoComponent implements OnInit, OnDestroy {
     deleteHelper(row: any): void;
     getFromDisk(): unknown;
     saveToDisk(): void;
+    static ɵfac: i0.ɵɵFactoryDef<TodoDemoComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<TodoDemoComponent, "todo-demo", never, { "verticalScrollbar": "verticalScrollbar"; }, {}, never, never>;
 }

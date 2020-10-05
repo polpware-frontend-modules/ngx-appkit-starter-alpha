@@ -3,6 +3,7 @@ import { AlertService, AppTranslationService } from '@polpware/ngx-appkit-servic
 import { NotificationService } from '../../services/notification.service';
 import { AccountService } from '../../services/account.service';
 import { Notification } from '../../models/notification.model';
+import * as i0 from "@angular/core";
 export declare class NotificationsViewerComponent implements OnInit, OnDestroy {
     private alertService;
     private translationService;
@@ -30,5 +31,7 @@ export declare class NotificationsViewerComponent implements OnInit, OnDestroy {
     deleteNotification(row: Notification): void;
     deleteNotificationHelper(row: Notification): void;
     togglePin(row: Notification): void;
-    readonly canManageNotifications: boolean;
+    get canManageNotifications(): boolean;
+    static ɵfac: i0.ɵɵFactoryDef<NotificationsViewerComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<NotificationsViewerComponent, "notifications-viewer", never, { "isViewOnly": "isViewOnly"; "verticalScrollbar": "verticalScrollbar"; }, {}, never, never>;
 }

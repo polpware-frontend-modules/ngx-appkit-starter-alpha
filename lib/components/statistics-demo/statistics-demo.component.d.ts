@@ -1,6 +1,7 @@
 import { OnInit, OnDestroy } from '@angular/core';
 import { Subscription, Observable } from 'rxjs';
 import { AlertService } from '@polpware/ngx-appkit-services-alpha';
+import * as i0 from "@angular/core";
 export declare class StatisticsDemoComponent implements OnInit, OnDestroy {
     private alertService;
     chartData: {
@@ -39,4 +40,6 @@ export declare class StatisticsDemoComponent implements OnInit, OnDestroy {
     configure(response: boolean, value?: string): void;
     chartClicked(e: any): void;
     chartHovered(e: any): void;
+    static ɵfac: i0.ɵɵFactoryDef<StatisticsDemoComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<StatisticsDemoComponent, "statistics-demo", never, {}, {}, never, never>;
 }

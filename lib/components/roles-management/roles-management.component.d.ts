@@ -5,6 +5,7 @@ import { Permission } from '@polpware/ngx-oauth2';
 import { AccountService } from '../../services/account.service';
 import { Role } from '../../models/role.model';
 import { RoleEditorComponent } from '../role-editor/role-editor.component';
+import * as i0 from "@angular/core";
 export declare class RolesManagementComponent implements OnInit, AfterViewInit {
     private alertService;
     private translationService;
@@ -34,5 +35,7 @@ export declare class RolesManagementComponent implements OnInit, AfterViewInit {
     editRole(row: Role): void;
     deleteRole(row: Role): void;
     deleteRoleHelper(row: Role): void;
-    readonly canManageRoles: boolean;
+    get canManageRoles(): boolean;
+    static ɵfac: i0.ɵɵFactoryDef<RolesManagementComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<RolesManagementComponent, "roles-management", never, {}, {}, never, never>;
 }

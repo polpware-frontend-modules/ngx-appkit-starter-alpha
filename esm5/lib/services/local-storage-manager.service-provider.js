@@ -1,43 +1,24 @@
-/**
- * @fileoverview added by tsickle
- * Generated from: lib/services/local-storage-manager.service-provider.ts
- * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
- */
-import * as tslib_1 from "tslib";
+import { __extends } from "tslib";
 import { Injectable } from '@angular/core';
 import { LocalStoreManagerServiceAbstractProvider } from '@polpware/ngx-appkit-contracts-alpha';
-import { LocalStoreManager } from '@polpware/ngx-appkit-services-alpha';
+import * as i0 from "@angular/core";
+import * as i1 from "@polpware/ngx-appkit-services-alpha";
 var LocalStoreManagerProvider = /** @class */ (function (_super) {
-    tslib_1.__extends(LocalStoreManagerProvider, _super);
+    __extends(LocalStoreManagerProvider, _super);
     function LocalStoreManagerProvider(impl) {
         var _this = _super.call(this) || this;
         _this.impl = impl;
         return _this;
     }
-    /**
-     * @return {?}
-     */
-    LocalStoreManagerProvider.prototype.get = /**
-     * @return {?}
-     */
-    function () {
+    LocalStoreManagerProvider.prototype.get = function () {
         return this.impl;
     };
-    LocalStoreManagerProvider.decorators = [
-        { type: Injectable }
-    ];
-    /** @nocollapse */
-    LocalStoreManagerProvider.ctorParameters = function () { return [
-        { type: LocalStoreManager }
-    ]; };
+    /** @nocollapse */ LocalStoreManagerProvider.ɵfac = function LocalStoreManagerProvider_Factory(t) { return new (t || LocalStoreManagerProvider)(i0.ɵɵinject(i1.LocalStoreManager)); };
+    /** @nocollapse */ LocalStoreManagerProvider.ɵprov = i0.ɵɵdefineInjectable({ token: LocalStoreManagerProvider, factory: LocalStoreManagerProvider.ɵfac });
     return LocalStoreManagerProvider;
 }(LocalStoreManagerServiceAbstractProvider));
 export { LocalStoreManagerProvider };
-if (false) {
-    /**
-     * @type {?}
-     * @private
-     */
-    LocalStoreManagerProvider.prototype.impl;
-}
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibG9jYWwtc3RvcmFnZS1tYW5hZ2VyLnNlcnZpY2UtcHJvdmlkZXIuanMiLCJzb3VyY2VSb290Ijoibmc6Ly9AcG9scHdhcmUvbmd4LWFwcGtpdC1zdGFydGVyLWFscGhhLyIsInNvdXJjZXMiOlsibGliL3NlcnZpY2VzL2xvY2FsLXN0b3JhZ2UtbWFuYWdlci5zZXJ2aWNlLXByb3ZpZGVyLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7OztBQUFBLE9BQU8sRUFBRSxVQUFVLEVBQUUsTUFBTSxlQUFlLENBQUM7QUFFM0MsT0FBTyxFQUNILHdDQUF3QyxFQUUzQyxNQUFNLHNDQUFzQyxDQUFDO0FBRTlDLE9BQU8sRUFDSCxpQkFBaUIsRUFDcEIsTUFBTSxxQ0FBcUMsQ0FBQztBQUU3QztJQUMrQyxxREFBd0M7SUFFbkYsbUNBQTZCLElBQXVCO1FBQXBELFlBQ0ksaUJBQU8sU0FDVjtRQUY0QixVQUFJLEdBQUosSUFBSSxDQUFtQjs7SUFFcEQsQ0FBQzs7OztJQUVELHVDQUFHOzs7SUFBSDtRQUNJLE9BQU8sSUFBSSxDQUFDLElBQUksQ0FBQztJQUNyQixDQUFDOztnQkFUSixVQUFVOzs7O2dCQUhQLGlCQUFpQjs7SUFhckIsZ0NBQUM7Q0FBQSxBQVZELENBQytDLHdDQUF3QyxHQVN0RjtTQVRZLHlCQUF5Qjs7Ozs7O0lBRXRCLHlDQUF3QyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEluamVjdGFibGUgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcblxuaW1wb3J0IHtcbiAgICBMb2NhbFN0b3JlTWFuYWdlclNlcnZpY2VBYnN0cmFjdFByb3ZpZGVyLFxuICAgIElMb2NhbFN0b3JlTWFuYWdlckNvbnRyYWN0XG59IGZyb20gJ0Bwb2xwd2FyZS9uZ3gtYXBwa2l0LWNvbnRyYWN0cy1hbHBoYSc7XG5cbmltcG9ydCB7XG4gICAgTG9jYWxTdG9yZU1hbmFnZXJcbn0gZnJvbSAnQHBvbHB3YXJlL25neC1hcHBraXQtc2VydmljZXMtYWxwaGEnO1xuXG5ASW5qZWN0YWJsZSgpXG5leHBvcnQgY2xhc3MgTG9jYWxTdG9yZU1hbmFnZXJQcm92aWRlciBleHRlbmRzIExvY2FsU3RvcmVNYW5hZ2VyU2VydmljZUFic3RyYWN0UHJvdmlkZXIge1xuXG4gICAgY29uc3RydWN0b3IocHJpdmF0ZSByZWFkb25seSBpbXBsOiBMb2NhbFN0b3JlTWFuYWdlcikge1xuICAgICAgICBzdXBlcigpO1xuICAgIH1cblxuICAgIGdldCgpOiBJTG9jYWxTdG9yZU1hbmFnZXJDb250cmFjdCB7XG4gICAgICAgIHJldHVybiB0aGlzLmltcGw7XG4gICAgfVxufVxuIl19
+/*@__PURE__*/ (function () { i0.ɵsetClassMetadata(LocalStoreManagerProvider, [{
+        type: Injectable
+    }], function () { return [{ type: i1.LocalStoreManager }]; }, null); })();
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibG9jYWwtc3RvcmFnZS1tYW5hZ2VyLnNlcnZpY2UtcHJvdmlkZXIuanMiLCJzb3VyY2VSb290Ijoibmc6Ly9AcG9scHdhcmUvbmd4LWFwcGtpdC1zdGFydGVyLWFscGhhLyIsInNvdXJjZXMiOlsibGliL3NlcnZpY2VzL2xvY2FsLXN0b3JhZ2UtbWFuYWdlci5zZXJ2aWNlLXByb3ZpZGVyLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFBQSxPQUFPLEVBQUUsVUFBVSxFQUFFLE1BQU0sZUFBZSxDQUFDO0FBRTNDLE9BQU8sRUFDSCx3Q0FBd0MsRUFFM0MsTUFBTSxzQ0FBc0MsQ0FBQzs7O0FBTTlDO0lBQytDLDZDQUF3QztJQUVuRixtQ0FBNkIsSUFBdUI7UUFBcEQsWUFDSSxpQkFBTyxTQUNWO1FBRjRCLFVBQUksR0FBSixJQUFJLENBQW1COztJQUVwRCxDQUFDO0lBRUQsdUNBQUcsR0FBSDtRQUNJLE9BQU8sSUFBSSxDQUFDLElBQUksQ0FBQztJQUNyQixDQUFDO3lIQVJRLHlCQUF5Qjt3RkFBekIseUJBQXlCLFdBQXpCLHlCQUF5QjtvQ0FadEM7Q0FxQkMsQUFWRCxDQUMrQyx3Q0FBd0MsR0FTdEY7U0FUWSx5QkFBeUI7a0RBQXpCLHlCQUF5QjtjQURyQyxVQUFVIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgSW5qZWN0YWJsZSB9IGZyb20gJ0Bhbmd1bGFyL2NvcmUnO1xuXG5pbXBvcnQge1xuICAgIExvY2FsU3RvcmVNYW5hZ2VyU2VydmljZUFic3RyYWN0UHJvdmlkZXIsXG4gICAgSUxvY2FsU3RvcmVNYW5hZ2VyQ29udHJhY3Rcbn0gZnJvbSAnQHBvbHB3YXJlL25neC1hcHBraXQtY29udHJhY3RzLWFscGhhJztcblxuaW1wb3J0IHtcbiAgICBMb2NhbFN0b3JlTWFuYWdlclxufSBmcm9tICdAcG9scHdhcmUvbmd4LWFwcGtpdC1zZXJ2aWNlcy1hbHBoYSc7XG5cbkBJbmplY3RhYmxlKClcbmV4cG9ydCBjbGFzcyBMb2NhbFN0b3JlTWFuYWdlclByb3ZpZGVyIGV4dGVuZHMgTG9jYWxTdG9yZU1hbmFnZXJTZXJ2aWNlQWJzdHJhY3RQcm92aWRlciB7XG5cbiAgICBjb25zdHJ1Y3Rvcihwcml2YXRlIHJlYWRvbmx5IGltcGw6IExvY2FsU3RvcmVNYW5hZ2VyKSB7XG4gICAgICAgIHN1cGVyKCk7XG4gICAgfVxuXG4gICAgZ2V0KCk6IElMb2NhbFN0b3JlTWFuYWdlckNvbnRyYWN0IHtcbiAgICAgICAgcmV0dXJuIHRoaXMuaW1wbDtcbiAgICB9XG59XG4iXX0=

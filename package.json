@@ -1,19 +1,19 @@
 {
   "name": "@polpware/ngx-appkit-starter-alpha",
-  "version": "8.0.0",
+  "version": "9.0.0",
   "peerDependencies": {
-    "@angular/common": "^8.2.14",
-    "@angular/core": "^8.2.14",
-    "@angular/forms": "~8.2.14",
-    "@angular/router": "~8.2.14",
-    "@ngx-translate/core": "^11.0.1",
-    "@swimlane/ngx-datatable": "^16.0.2",
-    "@polpware/ngx-oauth2": "^8.0.0",
-    "@polpware/ngx-appkit-contracts-alpha": "^8.0.0",
-    "@polpware/ngx-appkit-services-alpha": "^8.0.0",
-    "ng2-charts": "^2.3.0",
-    "ngx-bootstrap": "^5.2.0",
-    "rxjs": "~6.4.0"
+    "@angular/common": "^9.0.0",
+    "@angular/core": "^9.0.0",
+    "@angular/forms": "^9.0.0",
+    "@angular/router": "^9.0.0",
+    "@ngx-translate/core": "^12.0.0",
+    "@swimlane/ngx-datatable": "^17.0.0",
+    "@polpware/ngx-oauth2": "^9.0.0",
+    "@polpware/ngx-appkit-contracts-alpha": "^9.0.0",
+    "@polpware/ngx-appkit-services-alpha": "^9.0.0",
+    "ng2-charts": "^2.4.2",
+    "ngx-bootstrap": "^6.1.0",
+    "rxjs": "~6.5.5"
   },
   "main": "bundles/polpware-ngx-appkit-starter-alpha.umd.js",
   "module": "fesm5/polpware-ngx-appkit-starter-alpha.js",
@@ -23,9 +23,11 @@
   "fesm5": "fesm5/polpware-ngx-appkit-starter-alpha.js",
   "fesm2015": "fesm2015/polpware-ngx-appkit-starter-alpha.js",
   "typings": "polpware-ngx-appkit-starter-alpha.d.ts",
-  "metadata": "polpware-ngx-appkit-starter-alpha.metadata.json",
   "sideEffects": false,
   "dependencies": {
-    "tslib": "^1.9.0"
+    "tslib": "^1.10.0"
+  },
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy. This is not allowed.\\nPlease delete and rebuild the package, without compiling with Ivy, before attempting to publish.\\n')\" && exit 1"
   }
 }

@@ -4,6 +4,7 @@ import { User } from '@polpware/ngx-oauth2';
 import { AccountService } from '../../services/account.service';
 import { UserEdit } from '../../models/user-edit.model';
 import { Role } from '../../models/role.model';
+import * as i0 from "@angular/core";
 export declare class UserInfoComponent implements OnInit {
     private alertService;
     private accountService;
@@ -55,6 +56,8 @@ export declare class UserInfoComponent implements OnInit {
     editUser(user: User, allRoles: Role[]): UserEdit;
     displayUser(user: User, allRoles?: Role[]): void;
     private setRoles;
-    readonly canViewAllRoles: boolean;
-    readonly canAssignRoles: boolean;
+    get canViewAllRoles(): boolean;
+    get canAssignRoles(): boolean;
+    static ɵfac: i0.ɵɵFactoryDef<UserInfoComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<UserInfoComponent, "user-info", never, { "isViewOnly": "isViewOnly"; "isGeneralEditor": "isGeneralEditor"; }, {}, never, never>;
 }

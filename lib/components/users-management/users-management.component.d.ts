@@ -6,6 +6,7 @@ import { AccountService } from '../../services/account.service';
 import { Role } from '../../models/role.model';
 import { UserEdit } from '../../models/user-edit.model';
 import { UserInfoComponent } from '../user-info/user-info.component';
+import * as i0 from "@angular/core";
 export declare class UsersManagementComponent implements OnInit, AfterViewInit {
     private alertService;
     private translationService;
@@ -39,7 +40,9 @@ export declare class UsersManagementComponent implements OnInit, AfterViewInit {
     editUser(row: UserEdit): void;
     deleteUser(row: UserEdit): void;
     deleteUserHelper(row: UserEdit): void;
-    readonly canAssignRoles: boolean;
-    readonly canViewRoles: boolean;
-    readonly canManageUsers: boolean;
+    get canAssignRoles(): boolean;
+    get canViewRoles(): boolean;
+    get canManageUsers(): boolean;
+    static ɵfac: i0.ɵɵFactoryDef<UsersManagementComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<UsersManagementComponent, "users-management", never, {}, {}, never, never>;
 }
